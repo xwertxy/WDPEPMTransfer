@@ -8,6 +8,7 @@ use pocketmine\player\Player;
 use pocketmine\utils\TextFormat;
 use pocketmine\plugin\PluginOwned;
 use pocketmine\plugin\Plugin;
+use pocketmine\Server;
 
 class WdpeTransferCommand extends Command implements PluginOwned {
 
