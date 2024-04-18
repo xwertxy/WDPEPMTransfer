@@ -7,9 +7,14 @@ use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat;
 use pocketmine\plugin\PluginOwned;
+use pocketmine\plugin\Plugin;
 
 class WdpeTransferCommand extends Command implements PluginOwned {
 
+  public function getOwningPlugin() : Plugin {
+    return WdpeTransfer::getInstance();
+  }
+  
   public function __construct() {
     parent::__construct("transfer", "Transfer to another server.", "For Player: /transfer <server_name> [player_name] [port], For Console: /transfer <player_name> <server_name> [port]");
   }
