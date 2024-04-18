@@ -5,4 +5,8 @@ main: xwertxy\WDPEPMTransfer\WdpeTransfer
 api: 5.0.0
 version: 1.0.0
 description: WaterdogPE transfer support for Pocketmine-MP.
+permissions:
+   wdpepm.transfer:
+      default: op
+      description: Allows you to transfer in any server.
 ...
