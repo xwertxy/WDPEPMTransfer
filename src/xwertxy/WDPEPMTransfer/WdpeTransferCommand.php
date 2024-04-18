@@ -18,6 +18,7 @@ class WdpeTransferCommand extends Command implements PluginOwned {
   
   public function __construct() {
     parent::__construct("transfer", "Transfer to another server.", "For Player: /transfer <server_name> [player_name] [port], For Console: /transfer <player_name> <server_name> [port]");
+    $this->setPermission("wdpepm.transfer");
   }
 
   public function execute(CommandSender $sender, string $label, array $args) : void {
